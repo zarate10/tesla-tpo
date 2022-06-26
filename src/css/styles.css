@@ -36,6 +36,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    font-display: swap;
 }
 :root {
     --mainColor: #d81f3b; 

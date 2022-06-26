@@ -46,8 +46,13 @@ document.addEventListener("DOMContentLoaded", function(e) {
       document.body.style.overflowY = 'scroll'
       for (let i = 0; i < secciones.length; i++){
         secciones[i].style.display = 'flex'
+        if (secciones[i].id === 'video'){ 
+          secciones[i].style.display = 'none'
+        }
       }
-    
+      
+
+
       sr.reveal('#inicio', toTop)
       sr.reveal('.logo-box', toBottom)
 
@@ -72,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
             secVideo.style.display = "block"
             
             document.body.style.overflow = 'hidden'
-
             
             setTimeout(() => { // terminado el vídeo con una duración 107500 ms, habilitamos todo lo de abajo
                 secVideo.style.display = "none"
@@ -83,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                   document.body.style.overflowY = 'scroll'
                 }, 1000)
 
-            }, 107500)
+            }, 108000)
         }
         
       })
