@@ -48,12 +48,15 @@ document.addEventListener("DOMContentLoaded", function(e) {
       let iframeYt = document.querySelector('#iframe-yt')
       let boxCar = document.querySelector('.box-car')
 
-
+      /* 
+       *  click botón play ejecuta el vídeo (L55), escondiendo la sección inicio y el head con una animación (L61-62)
+       *  además de habilitar el iframe (L63) y ocultar el scroll (L65)
+      */
       secInicio.addEventListener('click', () => {
         
         if (document.documentElement.clientWidth > 768) {
-
-            iframeYt.setAttribute('src', 'https://www.youtube.com/embed/ijcAwrWMi0g?controls=0&autoplay=1')
+            
+            iframeYt.setAttribute('src', 'https://www.youtube.com/embed/ijcAwrWMi0g?controls=0&autoplay=1') // agregamos la url al iframe con autoplay
 
             navbar.style.marginTop = "-500px"
             boxCar.style.marginTop = "-1920px"
@@ -61,19 +64,20 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
             document.body.style.overflow = 'hidden'
 
-            setTimeout(() => {
+            
+            setTimeout(() => { // terminado el vídeo con una duración 107500 ms, habilitamos todo lo de abajo
                 secVideo.style.display = "none"
                 navbar.style.marginTop = "0px"
                 boxCar.style.marginTop = "0px"
-                setTimeout(() => {
+
+                setTimeout(() => { // habilitamos el scroll 1 segundo después de que todo lo demás haya sido habilitado.
                   document.body.style.overflowY = 'scroll'
-                },1000)
+                }, 1000)
+
             }, 107500)
         }
         
       })
-
-
-  }, 3000)
+  }, 3000) // <- este es el tiempo que tarda en ejecutarse las acciones dentro del timeout de DOMContentLoaded (cuando el documento está listo).
 });
 
