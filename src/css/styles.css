@@ -149,7 +149,7 @@ section#inicio .box-info{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     flex-wrap: wrap;
     margin-top: -5%;
 }
@@ -260,11 +260,23 @@ section#video > iframe {
         justify-content: center;
         height: 65%;
         position: absolute;
-        top: 0;
-    
+        top: 10%;
     }
     section#inicio .box-info {
         max-width: 300px;
     }
-
+    section#inicio .box-car img {
+        width: 110%;
+    }
+}
+@media (max-width: 540px){
+    body { 
+        font-size: 14px;
+    }
+    section#inicio .box-car{ 
+        top: 5%;
+    }
+    section#inicio .box-car img {
+        width: 120%;
+    }
 }

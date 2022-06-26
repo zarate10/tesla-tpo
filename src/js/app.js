@@ -9,7 +9,6 @@ for (let i = 0; i < secciones.length; i++){
   secciones[i].style.display = 'none'
 }
 
-
 // ACTIVE NAVBAR
 let btnContainer = document.querySelector(".nav-container");
 let btns = btnContainer.getElementsByClassName("btn");
@@ -51,8 +50,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
         }
       }
       
-
-
       sr.reveal('#inicio', toTop)
       sr.reveal('.logo-box', toBottom)
 
