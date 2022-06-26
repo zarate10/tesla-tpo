@@ -268,6 +268,9 @@ section#video > iframe {
     section#inicio .box-car img {
         width: 110%;
     }
+    section#inicio .box-car .box { 
+        margin-top: -35px;
+    } 
 }
 @media (max-width: 540px){
     body { 
@@ -275,6 +278,7 @@ section#video > iframe {
     }
     section#inicio .box-car{ 
         top: 5%;
+
     }
     section#inicio .box-car img {
         width: 120%;
