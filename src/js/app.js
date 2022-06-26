@@ -32,8 +32,8 @@ const toBottom = {
 }
 
 /* DOCUMENTO READY */
+window.scrollTo(0,0)
 document.addEventListener("DOMContentLoaded", function(e) {
-  window.scrollTo(0,0)
   setTimeout(() => {
 
       loader.style.display = 'none'
