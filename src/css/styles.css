@@ -1,0 +1,269 @@
+/* importamos las fuentes para la página */
+@font-face {
+    font-family: Gotham;
+    src: url('../../assets/fonts/Gotham/Gotham-Black.otf');
+    font-weight: 1000;
+}
+@font-face {
+    font-family: Gotham;
+    src: url('../../assets/fonts/Gotham/Gotham-Bold.otf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: Gotham;
+    src: url('../../assets/fonts/Gotham/GothamMedium.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Gotham;
+    src: url('../../assets/fonts/Gotham/Gotham-Light.otf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Gotham;
+    src: url('../../assets/fonts/Gotham/Gotham-XLight.otf');
+    font-weight: 200;
+}
+@font-face {
+    font-family: Gotham;
+    src: url('../../assets/fonts/Gotham/Gotham-Thin.otf');
+    font-weight: 100;
+}
+* { 
+    padding: 0;
+    margin: 0;
+    font-family: Gotham;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root {
+    --mainColor: #d81f3b; 
+    --w: white;
+    --gris: rgb(146, 146, 146);
+}
+body { 
+    background: #000;
+    color: var(--w);
+    font-weight: 100;
+    overflow-x: hidden;
+    letter-spacing: 1px;
+}
+.active { 
+    color: var(--mainColor) !important;
+}
+
+/* __________ HEADER __________ */
+
+header { 
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10000000;
+}
+header .navbar-lg, 
+header .navbar-sm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:  wrap;
+    transition: 1s;
+}
+header .navbar-lg .logo-box { 
+    width: 85px;
+    background: var(--w);
+    padding: 28px 10px;
+}
+header .navbar-lg .logo-box img { 
+    width: 100%;
+}
+header .navbar-lg ul { 
+    display: flex;
+}
+header .navbar-lg ul li a { 
+    color: var(--w);
+    padding: 15px 25px;
+    font-size: 0.8em;
+    font-weight: 200;
+    text-transform: uppercase;
+    background: black;
+    transition: 0.3s;
+    letter-spacing: 1.5px;
+}
+header .navbar-lg ul li:hover > a {
+    color: var(--mainColor);
+    opacity: 1;
+    transition: 0.3s;
+}
+header .navbar-sm { 
+    display: none;
+}
+
+/* __________ SECCIONES DIMENSIONES __________ */
+
+section#inicio,
+section#nosotros,
+section#modely,
+section#contacto,
+section#video,
+footer { 
+    width: 100%;
+    height: 100vh;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/* __________ INICIO  __________ */
+
+section#inicio { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: url(../../assets/img/cursor_video.png), pointer;
+}
+section#inicio .box-car{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+}
+section#inicio .box-car img { 
+    width: 77%;
+    background-image: url(../../assets/img/TESLA_LOGO_BG.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 37%;
+}
+section#inicio .box-info{
+    max-width: 1100px;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: -5%;
+}
+section#inicio .box-info .box {
+    width: 150px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+section#inicio .box-info .box h2 {
+    font-weight: 300;
+    font-size: 2.3em;
+}
+section#inicio .box-info .box h3 {
+    font-weight: 100;
+    font-size: 0.7em;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* __________ VIDEO  __________ */
+section#video { 
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section#video > iframe { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+@media (max-width: 768px){ 
+
+    /* ________ HEADER ________ */
+    header {
+        position: absolute;
+    }
+    header .navbar-lg { 
+        display: none;
+    }
+    header .navbar-sm { 
+        display: flex;
+        justify-content: center;
+        padding: 30px 5px;
+    }
+    header .navbar-sm .logo-box{ 
+        width: 70px;
+    }
+    header .navbar-sm .logo-box img { 
+        width: 100%;
+    }
+    header .navbar-sm .nav-box {
+        position: fixed;
+        bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+        background: rgba(26, 26, 26, 0.384);
+        backdrop-filter: blur(4px);
+        border-radius: 15px;
+        
+    }
+    header .navbar-sm .nav-box ul { 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 55px;
+        width: 100%;
+    }
+    header .navbar-sm .nav-box ul li a { 
+        color: var(--w);
+        padding: 5px;
+        transition: 0.3s;
+    }
+    header .navbar-sm .nav-box ul li a:hover {
+        color: var(--mainColor);
+    }
+    header .navbar-sm .nav-box ul li:hover > .icon-description {
+        position: absolute;
+        margin-top: -70px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .navbar-sm .nav-box .icon-description > p {
+        color: var(--gris);
+        padding: 5px 20px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: 300;
+    }
+
+    /* ________ INICIO ________ */
+    section#inicio .box-car{ 
+        justify-content: center;
+        height: 65%;
+        position: absolute;
+        top: 0;
+    
+    }
+    section#inicio .box-info {
+        max-width: 300px;
+    }
+
+}

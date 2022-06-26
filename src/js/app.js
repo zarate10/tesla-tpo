@@ -1,0 +1,79 @@
+let loader = document.querySelector('.loader')
+let navbar = document.querySelector('.navbar-lg')
+
+/* INSTANCIA INICIAL */
+document.body.style.overflowX = 'hidden'
+document.body.style.overflowY = 'hidden'
+
+// ACTIVE NAVBAR
+let btnContainer = document.querySelector(".nav-container");
+let btns = btnContainer.getElementsByClassName("btn");
+
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  } 
+
+// ANIMACIONES SCROLL
+window.sr = ScrollReveal(); 
+
+const toTop = { 
+  duration: 2000,
+  origin: 'top',
+  distance: '-100px'
+}
+const toBottom = { 
+  duration: 2000,
+  origin: 'bottom',
+  distance: '-300px'
+}
+
+/* DOCUMENTO READY */
+document.addEventListener("DOMContentLoaded", function(e) {
+  window.scrollTo(0,0)
+  setTimeout(() => {
+
+      loader.style.display = 'none'
+      document.body.style.overflowY = 'scroll'
+      
+      sr.reveal('#inicio', toTop)
+      sr.reveal('.logo-box', toBottom)
+
+      // play video script
+      let secInicio = document.querySelector('#inicio')
+      let secVideo = document.querySelector('#video')
+      let iframeYt = document.querySelector('#iframe-yt')
+      let boxCar = document.querySelector('.box-car')
+
+
+      secInicio.addEventListener('click', () => {
+        
+        if (document.documentElement.clientWidth > 768) {
+
+            iframeYt.setAttribute('src', 'https://www.youtube.com/embed/ijcAwrWMi0g?controls=0&autoplay=1')
+
+            navbar.style.marginTop = "-500px"
+            boxCar.style.marginTop = "-1920px"
+            secVideo.style.display = "block"
+
+            document.body.style.overflow = 'hidden'
+
+            setTimeout(() => {
+                secVideo.style.display = "none"
+                navbar.style.marginTop = "0px"
+                boxCar.style.marginTop = "0px"
+                setTimeout(() => {
+                  document.body.style.overflowY = 'scroll'
+                },1000)
+            }, 107500)
+        }
+        
+      })
+
+
+  }, 3000)
+});
+
