@@ -1,3 +1,5 @@
+window.scrollTo(0,0)
+
 let loader = document.querySelector('.loader')
 let navbar = document.querySelector('.navbar-lg')
 
@@ -32,7 +34,6 @@ const toBottom = {
 }
 
 /* DOCUMENTO READY */
-window.scrollTo(0,0)
 document.addEventListener("DOMContentLoaded", function(e) {
   setTimeout(() => {
 
@@ -78,6 +79,5 @@ document.addEventListener("DOMContentLoaded", function(e) {
         }
         
       })
-  }, 3000) // <- este es el tiempo que tarda en ejecutarse las acciones dentro del timeout de DOMContentLoaded (cuando el documento está listo).
+  }, 1500) // <- este es el tiempo que tarda en ejecutarse las acciones dentro del timeout de DOMContentLoaded (cuando el documento está listo).
 });
-
