@@ -133,9 +133,9 @@ section#contacto,
 section#video,
 footer { 
     width: 100%;
-    height: 100vh;
     max-width: 85%;
     margin: 0 auto;
+    margin-bottom: 10%;
 }
 
 /* __________ INICIO  __________ */
@@ -146,6 +146,8 @@ section#inicio {
     align-items: center;
     flex-direction: column;
     cursor: url(../../assets/img/cursor_video.png), pointer;
+    height: 100vh;
+
 }
 section#inicio .box-car{
     width: 100%;
@@ -197,6 +199,7 @@ section#inicio .box-info .box h3 {
 
 /* __________ VIDEO  __________ */
 section#video { 
+    
     max-width: 100%;
     width: 100vw;
     height: 100vh;
@@ -218,12 +221,9 @@ section#nosotros {
     align-items: center;
     flex-wrap: wrap;
 }
-section#nosotros .box {
-    height: 400px;
-}
 section#nosotros > #box-info-nosotros { 
     max-height: 550px;
-    height: 100%;
+    height: 700px;
     max-width: 500px;
     width: 100%;
     background: rgb(5, 5, 5);
@@ -258,7 +258,7 @@ section#nosotros > #box-info-nosotros a:hover{
 }
 section#nosotros > #box-img-nosotros {
     max-height: 550px;
-    height: 100%;
+    height: 700px;
     max-width: 500px;
     width: 100%;
 }
@@ -267,16 +267,35 @@ section#nosotros > .box > img {
     width: 100%;
     object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
+/* __________ MODEL Y  __________ */
+section#modely {
+    max-width: 100%;
+}
+section#modely #background-modely {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section#modely > .info-wrapper {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    margin-top: 7.5%;
+    right: 7.5%;
+    backdrop-filter: blur(50px);
+}
+section#modely > .info-wrapper .box-img { 
+    width: 100%;
+}
+section#modely > .info-wrapper .box-img img { 
+    width: 100%;
+    object-fit: cover;
+}
+section#modely > .info-wrapper .box-info {
+    width: 100%;
+    height: 100%;
+    background: red;
+} 
 
 
 
@@ -390,7 +409,6 @@ section#nosotros > .box > img {
     section#nosotros > #box-info-nosotros { 
         max-height: none;
     }
-
 }
 @media (max-width: 540px){
     body { 
