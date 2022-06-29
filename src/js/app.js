@@ -88,5 +88,5 @@ document.addEventListener("DOMContentLoaded", function(e) {
         }
         
       })
-  }, 1500) // <- este es el tiempo que tarda en ejecutarse las acciones dentro del timeout de DOMContentLoaded (cuando el documento está listo).
+  }, 150) // <- este es el tiempo que tarda en ejecutarse las acciones dentro del timeout de DOMContentLoaded (cuando el documento está listo).
 });
