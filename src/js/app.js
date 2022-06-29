@@ -52,6 +52,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
       
       sr.reveal('#inicio', toTop)
       sr.reveal('.logo-box', toBottom)
+      sr.reveal('#box-info-nosotros', toTop)
+      sr.reveal('#box-img-nosotros', toBottom)
 
       // play video script
       let secInicio = document.querySelector('#inicio')
