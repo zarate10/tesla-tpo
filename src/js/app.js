@@ -1,6 +1,28 @@
 let loader = document.querySelector('.loader')
 let navbar = document.querySelector('.navbar-lg')
 let secciones = document.querySelectorAll('section')
+let progressBar = document.querySelectorAll('.progress')
+
+let widthAux1 = progressBar[0].getAttribute("style"); 
+let widthAux2 = progressBar[1].getAttribute("style");
+let widthAux3 = progressBar[2].getAttribute("style");
+
+function removerWidth(){ 
+  for(let i = 0; i < progressBar.length; i++){ 
+    progressBar[i].setAttribute('style', 'width: 0%;')
+  }
+}
+
+window.onscroll = function() {
+  let scrollY = window.scrollY;
+  // console.log(scrollY > 1600);
+  if (scrollY > 1200) {
+    progressBar[0].setAttribute('style', widthAux1)
+    progressBar[1].setAttribute('style', widthAux2)
+    progressBar[2].setAttribute('style', widthAux3)
+  }
+};
+
 
 /* INSTANCIA INICIAL */
 document.body.style.overflowX = 'hidden'
@@ -37,8 +59,10 @@ const toBottom = {
 
 /* DOCUMENTO READY */
 document.addEventListener("DOMContentLoaded", function(e) {
-  window.scrollTo(0,0)
+  //window.scrollTo(0,0)
   setTimeout(() => {
+
+    removerWidth()
 
       /* mostrar cuando el documento está listo */
       loader.style.display = 'none'
@@ -50,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         }
       }
       
+      /* animaciones */
       sr.reveal('#inicio', toTop)
       sr.reveal('.logo-box', toBottom)
       sr.reveal('#box-info-nosotros', toTop)

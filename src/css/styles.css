@@ -278,7 +278,7 @@ section#modely #background-modely {
 }
 section#modely > .info-wrapper {
     width: 300px;
-    height: 500px;
+    height: 325px;
     position: absolute;
     margin-top: 7.5%;
     right: 7.5%;
@@ -292,12 +292,48 @@ section#modely > .info-wrapper .box-img img {
     object-fit: cover;
 }
 section#modely > .info-wrapper .box-info {
-    width: 100%;
-    height: 100%;
-    background: red;
+    max-width: 100%;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 } 
-
-
+section#modely > .info-wrapper .box-info .data {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.192);
+    display: flex;
+    align-items: center;
+}
+section#modely > .info-wrapper .box-info .data .data-info {
+    width: 70%;
+    padding: 10px;
+}
+section#modely > .info-wrapper .box-info .data .progress-bar {
+    width: 100%;
+    height: 4px;
+    background: rgb(0, 0, 0);
+}
+section#modely > .info-wrapper .box-info .data .progress-bar .progress {
+    height: 100%;
+    background: rgba(230, 25, 25, 0.884);
+    margin: 5px 0px;
+    transition: 0.7s;
+}
+section#modely > .info-wrapper .box-info .data .num {
+    position: absolute;
+    padding: 5px;
+    right: 8px;
+    font-size: 3em;
+    opacity: 0.2;
+}
+section#modely > .info-wrapper .box-info .data .data-info span { 
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
 
 
 
