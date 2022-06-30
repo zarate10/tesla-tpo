@@ -130,7 +130,7 @@ const toBottom = {
 
 /* DOCUMENTO READY */
 document.addEventListener("DOMContentLoaded", function(e) {
-  //window.scrollTo(0,0)
+  //window.scrollTo(0,0) <activar<activar<activar<activar<activar<activar<activar<activar<activar<activar<activar
   setTimeout(() => {
 
     removerWidth()
