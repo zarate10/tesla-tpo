@@ -284,7 +284,7 @@ section#modely > .info-wrapper {
     position: absolute;
     margin-top: 7.5%;
     right: 7.5%;
-    background: rgba(22, 26, 33, 0.493);
+    background: rgba(22, 26, 33, 0.747);
     backdrop-filter: blur(50px);
 }
 section#modely > .info-wrapper .box-img { 
@@ -316,12 +316,12 @@ section#modely > .info-wrapper .box-info .data .data-info {
 }
 section#modely > .info-wrapper .box-info .data .progress-bar {
     width: 100%;
-    height: 4px;
-    background: rgba(0, 0, 0, 0.541);
+    height: 2px;
+    background: rgba(255, 255, 255, 0.103);
 }
 section#modely > .info-wrapper .box-info .data .progress-bar .progress {
     height: 100%;
-    background: var(--mainColor);
+    background: var(--w);
     margin: 5px 0px;
     transition: 2s;
 }
@@ -329,7 +329,7 @@ section#modely > .info-wrapper .box-info .data .num {
     position: absolute;
     padding: 5px;
     right: 8px;
-    font-size: 3em;
+    font-size: 2.5em;
     opacity: 0.5;
 }
 section#modely > .info-wrapper .box-info .data .data-info span { 
@@ -350,7 +350,7 @@ section#modely > .box-buttons button {
     height: 35px;
     border: none;
     backdrop-filter: blur(400px);
-    background: rgba(22, 26, 33, 0.493);
+    background: rgba(22, 26, 33, 0.747);
     cursor: pointer;
     text-transform: uppercase;
     color: white;
@@ -463,7 +463,6 @@ section#modely > .configurador .information-fuel {
     section#modely { 
         display: flex;
         flex-direction: column;
-        max-width: 85%;
         width: 100%;
         background: rgb(126, 95, 95);
     }
