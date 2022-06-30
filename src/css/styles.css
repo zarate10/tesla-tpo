@@ -49,10 +49,10 @@ body {
     color: var(--w);
     font-weight: 100;
     letter-spacing: 1px;
+    overflow-x: hidden !important;
 }
 html, body {
     max-width: 100% !important;
-    overflow-x: hidden !important;
 }
 .active { 
     color: var(--mainColor) !important;
