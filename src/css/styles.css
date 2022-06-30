@@ -266,6 +266,7 @@ section#nosotros > .box > img {
     width: 100%;
     object-fit: cover;
 }
+
 /* __________ MODEL Y  __________ */
 section#modely {
     max-width: 100%;
@@ -282,6 +283,7 @@ section#modely > .info-wrapper {
     position: absolute;
     margin-top: 7.5%;
     right: 7.5%;
+    background: rgba(22, 26, 33, 0.493);
     backdrop-filter: blur(50px);
 }
 section#modely > .info-wrapper .box-img { 
@@ -347,10 +349,10 @@ section#modely > .box-buttons button {
     height: 35px;
     border: none;
     backdrop-filter: blur(400px);
-    background: rgba(0, 0, 0, 0.116);
+    background: rgba(22, 26, 33, 0.493);
     cursor: pointer;
     text-transform: uppercase;
-    color: black;
+    color: white;
     margin-top: -2%;
 }
 section#modely > .configurador { 
@@ -371,7 +373,7 @@ section#modely > .configurador .box-vehicle-img > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 section#modely > .configurador .box-data-vehicle { 
     width: 30%;
@@ -445,7 +447,32 @@ section#modely > .configurador .information-fuel {
 
 
 
+@media (max-width: 960px){
+    /* GENERAL */
+    section#inicio,
+    section#nosotros,
+    section#modely,
+    section#contacto,
+    section#video,
+    footer { 
+        max-width: none;
+    }
+    /* __________ MODEL Y __________ */
+    section#modely { 
+        display: flex;
+        flex-direction: column;
+        max-width: 85%;
+        width: 100%;
+        background: red;
+    }
 
+    section#modely > #background-modely,
+    section#modely > .configurador, 
+    section#modely > .info-wrapper,
+    section#modely > .box-buttons{
+        display: none !important;
+    }
+}
 
 @media (max-width: 768px){ 
 

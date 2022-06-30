@@ -80,6 +80,7 @@ for(let i = 0; i < btnsColors.length; i++){
     if (btnsColors[i].className === 'box-color black'){
       containerImg.style.marginLeft = "-100vw"
       nameColor.textContent = 'Negro sólido'
+      containerImg.setAttribute('alt', 'Negro sólido')
 
       setTimeout(() => {
         containerImg.setAttribute('src', './assets/img/color_veh/color_black.jpg')
@@ -89,6 +90,7 @@ for(let i = 0; i < btnsColors.length; i++){
     } else if (btnsColors[i].className === 'box-color red') {
       containerImg.style.marginLeft = "-100vw"
       nameColor.textContent = 'Rojo multicapa'
+      containerImg.setAttribute('alt', 'Rojo multicapa')
 
       setTimeout(() => {
         containerImg.setAttribute('src', './assets/img/color_veh/color_red.jpg')
@@ -98,6 +100,7 @@ for(let i = 0; i < btnsColors.length; i++){
     } else {
       containerImg.style.marginLeft = "-100vw"
       nameColor.textContent = 'Blanco perla multicapa'
+      containerImg.setAttribute('alt', 'Blanco perla multicapa')
 
       setTimeout(() => {
         containerImg.setAttribute('src', './assets/img/color_veh/color_white.jpg')
