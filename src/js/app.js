@@ -15,8 +15,9 @@ function removerWidth(){
 
 window.onscroll = function() {
   let scrollY = window.scrollY;
-  // console.log(scrollY > 1600);
-  if (scrollY > 1200) {
+  // console.log(scrollY);
+  
+  if (scrollY > 1300) {
     progressBar[0].setAttribute('style', widthAux1)
     progressBar[1].setAttribute('style', widthAux2)
     progressBar[2].setAttribute('style', widthAux3)
@@ -42,6 +43,73 @@ for (let i = 0; i < btns.length; i++) {
       this.className += " active";
     });
   } 
+
+// CONFIGURADOR 
+let configurador = document.querySelector('.configurador')
+let toggleConfig = document.querySelector('#btn-config')
+let btnsColors = document.querySelectorAll('.box-color')
+let containerImg = document.querySelector('#veh-color')
+let nameColor = document.querySelector('.name-color-veh')
+
+let configDesple = false; 
+
+toggleConfig.addEventListener('click', () => {
+  if (configDesple === false){ 
+    configurador.style.display = "flex"
+    configurador.style.marginLeft = "0"
+    toggleConfig.textContent = 'Comprar'
+
+    // animaciones nav
+    navbar.style.marginTop = "-500px"
+    
+    configDesple = true; 
+  } else { 
+    toggleConfig.textContent = 'Configurar'
+    configurador.style.marginLeft = "-100vw"
+
+    // animaciones nav
+    navbar.style.marginTop = "0"
+
+    configDesple = false;
+  }
+});
+
+for(let i = 0; i < btnsColors.length; i++){ 
+  btnsColors[i].addEventListener('click', () => {
+    // console.log(btnsColors[i].className)
+    if (btnsColors[i].className === 'box-color black'){
+      containerImg.style.marginLeft = "-100vw"
+      nameColor.textContent = 'Negro sólido'
+
+      setTimeout(() => {
+        containerImg.setAttribute('src', './assets/img/color_veh/color_black.jpg')
+        containerImg.style.marginLeft = "0"
+      },500)
+
+    } else if (btnsColors[i].className === 'box-color red') {
+      containerImg.style.marginLeft = "-100vw"
+      nameColor.textContent = 'Rojo multicapa'
+
+      setTimeout(() => {
+        containerImg.setAttribute('src', './assets/img/color_veh/color_red.jpg')
+        containerImg.style.marginLeft = "0"
+      },500)
+
+    } else {
+      containerImg.style.marginLeft = "-100vw"
+      nameColor.textContent = 'Blanco perla multicapa'
+
+      setTimeout(() => {
+        containerImg.setAttribute('src', './assets/img/color_veh/color_white.jpg')
+        containerImg.style.marginLeft = "0"
+      },500)
+    }
+  })
+}
+
+
+
+
 
 // ANIMACIONES SCROLL
 window.sr = ScrollReveal(); 
