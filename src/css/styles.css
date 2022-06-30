@@ -48,8 +48,11 @@ body {
     background: #000;
     color: var(--w);
     font-weight: 100;
-    overflow-x: hidden;
     letter-spacing: 1px;
+}
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 .active { 
     color: var(--mainColor) !important;
