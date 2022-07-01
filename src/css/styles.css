@@ -132,6 +132,7 @@ section#nosotros,
 section#modely,
 section#contacto,
 section#video,
+section#newsletter,
 footer { 
     width: 100%;
     max-width: 85%;
@@ -318,6 +319,7 @@ section#modely > .info-wrapper .box-info .data .progress-bar {
     width: 100%;
     height: 2px;
     background: rgba(255, 255, 255, 0.103);
+    border-right: 5px solid red;
 }
 section#modely > .info-wrapper .box-info .data .progress-bar .progress {
     height: 100%;
@@ -450,6 +452,142 @@ section#modely > .responsive-section {
 
 
 
+/* __________ NEWSLETTER __________ */
+section#newsletter {
+    max-width: 2000px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#newsletter > .container-news {
+    width: 80%;
+    height: 30%;
+    background: rgba(22, 26, 33, 0.747);
+    background-image: url(../../assets/img/bg-newsletter.png);
+    background-size: cover;
+    backdrop-filter: blur(30);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    border: 1px solid rgb(15, 15, 15);
+}
+section#newsletter > .container-news .box-img { 
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+section#newsletter > .container-news .box-img img { 
+    width: 90%;
+}
+section#newsletter > .container-news .info-news { 
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 50px;
+}
+section#newsletter > .container-news .info-news form { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+section#newsletter > .container-news .info-news form label { 
+    font-size: 1.6em;
+}
+section#newsletter > .container-news .info-news form input {
+    background: rgba(22, 26, 33, 0.384);
+    padding: 15px;
+    border: 1px solid rgba(33, 39, 48, 0.123);
+    border-radius: 5px;
+    color: white;
+    width: 150%;
+}
+
+
+
+
+
+/* __________ CONTACTO __________ */
+section#contacto {
+    max-width: 1200px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section#contacto > .wrapper-iframe iframe { 
+    width: 100%;
+    height: 575px;
+}
+section#contacto > .wrapper-iframe,
+section#contacto > .wrapper-form {
+    margin-top: 2.5%;
+    width:  50%;
+}
+section#contacto > .wrapper-form{
+    height: 100%;
+    padding: 10px;
+}
+
+section#contacto > .wrapper-form form {
+    width: 100%;
+    height: 100%;
+    background: rgb(5, 5, 5);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section#contacto > .wrapper-form form .inputs-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+section#contacto > .wrapper-form form .inputs-contacto input,
+section#contacto > .wrapper-form form .inputs-contacto textarea { 
+    padding: 10px 15px;
+    background: rgb(10, 10, 10);
+    border: 1px solid rgba(85, 85, 85, 0.123);
+    color: white;
+}
+section#contacto > .wrapper-form form .inputs-contacto label {
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+section#contacto > .wrapper-form form .inputs-contacto input::placeholder,
+section#contacto > .wrapper-form form .inputs-contacto textarea::placeholder{
+    color: var(--gris);
+    font-weight: 200;
+    font-size: 13px;
+}
+section#contacto > .wrapper-form form > button { 
+    padding: 10px;
+    background: var(--mainColor);
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+section#contacto > .wrapper-form form > button:hover{
+    color: var(--mainColor);
+    outline: 1px solid var(--mainColor);
+    background: transparent;
+    transition: 0.5s;
+}
+
+
+
+
 
 @media (max-width: 960px){
     /* GENERAL */
@@ -458,6 +596,7 @@ section#modely > .responsive-section {
     section#modely,
     section#contacto,
     section#video,
+    section#newsletter,
     footer { 
         max-width: none;
     }
@@ -465,17 +604,19 @@ section#modely > .responsive-section {
     section#modely { 
         flex-direction: column;
         width: 100%;
+        margin-bottom: 100%;
     }
-
+    /* __________ NEWSLETTER __________ */
+    section#newsletter,
     section#modely > #background-modely,
     section#modely > .configurador, 
     section#modely > .info-wrapper,
     section#modely > .box-buttons{
         display: none !important;
     }
+     /* __________ MODELY __________ */
     section#modely > .responsive-section {
         width: 100%;
-
         background: rgba(22, 26, 33, 0.747);
         padding: 50px 30px;
         display: flex;
@@ -517,6 +658,17 @@ section#modely > .responsive-section {
         font-size: 0.85em;
         opacity: 0.8;
     }
+
+ /* __________ CONTACTO __________ */
+ section#contacto > .wrapper-iframe iframe{
+    width: 100%;
+    height: 300px;
+ }
+    section#contacto > .wrapper-iframe,
+    section#contacto > .wrapper-form {
+    margin-top: 2.5%;
+    width:  100%;
+}
 }
 
 @media (max-width: 768px){ 
