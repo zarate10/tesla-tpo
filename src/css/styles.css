@@ -3,31 +3,37 @@
     font-family: Gotham;
     src: url('../../assets/fonts/Gotham/Gotham-Black.otf');
     font-weight: 1000;
+    font-display: swap;
 }
 @font-face {
     font-family: Gotham;
     src: url('../../assets/fonts/Gotham/Gotham-Bold.otf');
     font-weight: 800;
+    font-display: swap;
 }
 @font-face {
     font-family: Gotham;
     src: url('../../assets/fonts/Gotham/GothamMedium.ttf');
     font-weight: 400;
+    font-display: swap;
 }
 @font-face {
     font-family: Gotham;
     src: url('../../assets/fonts/Gotham/Gotham-Light.otf');
     font-weight: 300;
+    font-display: swap;
 }
 @font-face {
     font-family: Gotham;
     src: url('../../assets/fonts/Gotham/Gotham-XLight.otf');
     font-weight: 200;
+    font-display: swap;
 }
 @font-face {
     font-family: Gotham;
     src: url('../../assets/fonts/Gotham/Gotham-Thin.otf');
     font-weight: 100;
+    font-display: swap;
 }
 * { 
     padding: 0;
