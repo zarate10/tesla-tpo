@@ -63,7 +63,7 @@ body {
     align-items: center;
     
 }
-.titulo-section h3 { 
+.titulo-section span { 
     font-weight: 300;
     letter-spacing: 1px;
     font-size: 0.9em;
@@ -585,6 +585,59 @@ section#contacto > .wrapper-form form > button:hover{
     transition: 0.5s;
 }
 
+footer {
+    max-width: 100%;
+    margin-bottom: 0% !important;
+    margin-top: 500px;
+}
+footer .primera, .segunda, .tercera{
+    width: 100%;
+    border-top: rgb(12, 12, 12) solid 1px;
+    background: rgb(5, 5, 5);
+}
+footer .primera {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .primera .wrapper-icons ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+footer .primera .wrapper-icons ul li img {
+    width: 150px;
+}
+footer .primera .wrapper-icons ul li a {
+    color: white;
+    transition: 0.2s;
+}
+footer .primera .wrapper-icons ul li a:hover{
+    color: var(--gris);
+    transition: 0.2s;
+}
+footer .segunda { 
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .segunda .right { 
+    text-align: right;
+}
+footer .tercera{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+    color: var(--gris);
+    text-transform: uppercase;
+}
 
 
 
@@ -604,7 +657,7 @@ section#contacto > .wrapper-form form > button:hover{
     section#modely { 
         flex-direction: column;
         width: 100%;
-        margin-bottom: 100%;
+        margin-bottom: 60%;
     }
     /* __________ NEWSLETTER __________ */
     section#newsletter,
