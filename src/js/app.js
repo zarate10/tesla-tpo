@@ -127,10 +127,20 @@ const toBottom = {
   origin: 'bottom',
   distance: '-300px'
 }
+const toRight = { 
+  duration: 2000,
+  origin: 'right',
+  distance: '-300px'
+}
+const toLeft = { 
+  duration: 2000,
+  origin: 'left',
+  distance: '-300px'
+}
 
 /* DOCUMENTO READY */
 document.addEventListener("DOMContentLoaded", function(e) {
-  //window.scrollTo(0,0) <activar<activar<activar<activar<activar<activar<activar<activar<activar<activar<activar
+  window.scrollTo(0,0)
   setTimeout(() => {
 
     removerWidth()
@@ -150,6 +160,13 @@ document.addEventListener("DOMContentLoaded", function(e) {
       sr.reveal('.logo-box', toBottom)
       sr.reveal('#box-info-nosotros', toTop)
       sr.reveal('#box-img-nosotros', toBottom)
+
+      sr.reveal('#newsletter-img', toRight)
+      
+      sr.reveal('#Nombre', toRight)
+      setTimeout(()=> {sr.reveal('#Email', toRight)}, 2000)
+      setTimeout(()=> {sr.reveal('#Pais', toRight)}, 4000)
+      setTimeout(()=> {sr.reveal('#Comentarios', toRight)}, 6000)
 
       // play video script
       let secInicio = document.querySelector('#inicio')

@@ -588,7 +588,7 @@ section#contacto > .wrapper-form form > button:hover{
 footer {
     max-width: 100%;
     margin-bottom: 0% !important;
-    margin-top: 500px;
+    margin-top: 100px;
 }
 footer .primera, .segunda, .tercera{
     width: 100%;
@@ -710,7 +710,7 @@ footer .tercera{
     section#modely { 
         flex-direction: column;
         width: 100%;
-        margin-bottom: 60%;
+        margin-bottom:40%;
     }
     /* __________ NEWSLETTER __________ */
     section#newsletter,
@@ -788,6 +788,9 @@ footer .tercera{
  footer .segunda .wrapper-integrantes .right {
     text-align: left;
  }
+ footer {
+    margin-top: 400px;
+}
 }
 
 
@@ -903,6 +906,11 @@ footer .tercera{
         max-height: none;
     }
 
+    section#modely { 
+        flex-direction: column;
+        width: 100%;
+        margin-bottom:50%;
+    }
 
 
 
@@ -964,5 +972,9 @@ footer .tercera{
     section#inicio .box-car img {
         width: 120%;
     }
-
+    section#modely { 
+        flex-direction: column;
+        width: 100%;
+        margin-bottom:80%;
+    }
 }
