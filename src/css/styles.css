@@ -625,8 +625,14 @@ footer .segunda {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-size: 0.9em;
+    color: white;
+    line-height: 20px;
 }
-footer .segunda .right { 
+footer .segunda .wrapper-integrantes  {
+    display: flex;
+}
+footer .segunda .wrapper-integrantes .right { 
     text-align: right;
 }
 footer .tercera{
@@ -638,6 +644,53 @@ footer .tercera{
     color: var(--gris);
     text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -722,7 +775,37 @@ footer .tercera{
     margin-top: 2.5%;
     width:  100%;
 }
+
+ /* __________ FOOTER __________ */
+ footer .segunda .wrapper-integrantes { 
+    max-width: 100%;
+    width: 90%;
+    display: block;
+    text-align: left;
+    line-height: 25px;
+    font-size: 0.9em;
+ }
+ footer .segunda .wrapper-integrantes .right {
+    text-align: left;
+ }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px){ 
 
@@ -819,7 +902,57 @@ footer .tercera{
         width: 100%;
         max-height: none;
     }
+
+
+
+
+      /* ________ FOOTER ________ */
+      footer { 
+        margin-bottom: 13% !important;
+      }
+      footer > .primera {
+        height: 100%;
+      }
+      footer > .primera .wrapper-icons ul {
+        display: block;
+        padding: 30px;
+        text-align: center;
+      }
+      footer > .primera .wrapper-icons ul li {
+        padding: 10px;
+    }
+    footer > .primera .wrapper-icons ul li a {
+        
+        color: var(--gris);
+      }
+    
+      
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 540px){
     body { 
         font-size: 14px;
