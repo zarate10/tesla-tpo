@@ -24,3 +24,5 @@ trabajo práctico final, materia diseño y desarrollo web, UADE.
 - Tendrán que establecer conexión con el FTP y cargar el sitio, además de subirlo a TEAMs.
 - Deberán agregar al menos un componente en js. 
 - El árbol de carpetas deberá seguir los estándares convencionales.
+
+##### NOTA FINAL: 10 

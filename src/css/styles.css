@@ -451,13 +451,6 @@ section#modely > .responsive-section {
     display: none;
 }
 
-
-
-
-
-
-
-
 /* __________ NEWSLETTER __________ */
 section#newsletter {
     max-width: 2000px;
@@ -516,11 +509,6 @@ section#newsletter > .container-news .info-news form input {
     color: white;
     width: 150%;
 }
-
-
-
-
-
 /* __________ CONTACTO __________ */
 section#contacto {
     max-width: 1200px;
@@ -651,56 +639,6 @@ footer .tercera{
     text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 960px){
     /* GENERAL */
     section#inicio,
@@ -798,24 +736,6 @@ footer .tercera{
     margin-top: 400px;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 768px){ 
 
     /* ________ HEADER ________ */
@@ -922,14 +842,14 @@ footer .tercera{
 
       /* ________ FOOTER ________ */
       footer { 
-        margin-bottom: 13% !important;
+        margin-bottom: 20% !important;
       }
       footer > .primera {
         height: 100%;
       }
       footer > .primera .wrapper-icons ul {
         display: block;
-        padding: 30px;
+        padding: 70px 30px;
         text-align: center;
       }
       footer > .primera .wrapper-icons ul li {
@@ -937,35 +857,14 @@ footer .tercera{
     }
     footer > .primera .wrapper-icons ul li a {
         
-        color: var(--gris);
+        color: wheat;
       }
-    
+      footer > .tercera {
+        margin-top: 15%;
+        font-size: 0.5em;
+      }
       
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 540px){
     body { 
